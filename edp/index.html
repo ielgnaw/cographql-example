@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <title>[Please input title]</title>
+    <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-0/esl.js"></script>
+    <script>
+    require.config({
+        'baseUrl': './src',
+        'paths': {},
+        'packages': []
+    });
+    </script>
+</head>
+
+<body>
+<button id="send">send</button>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    require(['index'], function (index) {
+        index.init();
+    });
+</script>
+</body>
+</html>
