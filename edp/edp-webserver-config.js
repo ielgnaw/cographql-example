@@ -84,7 +84,7 @@ exports.getLocations = function () {
 
 // 配置 cographql 页面
 exports.proxyMap = {
-    '172.18.186.16:8848': '127.0.0.1:3001'
+    '127.0.0.1:8848': '127.0.0.1:3001'
 };
 
 exports.injectResource = function ( res ) {

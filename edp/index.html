@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
+    <head>
+        <title>前端页面</title>
+        <meta charset="UTF-8" />
+        <style>
+            body {
+                height: 100%;
+                margin: 0;
+                width: 100%;
+                overflow: hidden;
+            }
+            #graphiql {
+                height: 100vh;
+            }
+        </style>
+        <link rel="stylesheet" href="./lib/graphiql.css" />
 
-    <title>[Please input title]</title>
-    <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-0/esl.js"></script>
-    <script>
-    require.config({
-        'baseUrl': './src',
-        'paths': {},
-        'packages': []
-    });
-    </script>
-</head>
-
-<body>
-<button id="send">send</button>
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-    require(['index'], function (index) {
-        index.init();
-    });
-</script>
-</body>
+        <script src="./lib/es6-promise.auto.min.js"></script>
+        <script src="./lib/fetch.min.js"></script>
+        <script src="./lib/react.min.js"></script>
+        <script src="./lib/react-dom.min.js"></script>
+        <script src="./lib/graphiql.min.js"></script>
+        <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-0/esl.js"></script>
+        <script>
+            require.config({
+                'baseUrl': './src',
+                'paths': {},
+                'packages': []
+            });
+        </script>
+    </head>
+    <body>
+        <div id="graphiql">Loading...</div>
+        <script>
+            require(['index'], function (index) {
+                index.init();
+            });
+        </script>
+    </body>
 </html>

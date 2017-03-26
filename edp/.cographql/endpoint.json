@@ -1,0 +1,577 @@
+{
+    "kind": "Document",
+    "definitions": [
+        {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+                "kind": "Name",
+                "value": "Author",
+                "loc": {
+                    "start": 5,
+                    "end": 11
+                }
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "id",
+                        "loc": {
+                            "start": 16,
+                            "end": 18
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NonNullType",
+                        "type": {
+                            "kind": "NamedType",
+                            "name": {
+                                "kind": "Name",
+                                "value": "Int",
+                                "loc": {
+                                    "start": 20,
+                                    "end": 23
+                                }
+                            },
+                            "loc": {
+                                "start": 20,
+                                "end": 23
+                            }
+                        },
+                        "loc": {
+                            "start": 20,
+                            "end": 24
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 16,
+                        "end": 24
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "name",
+                        "loc": {
+                            "start": 27,
+                            "end": 31
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "String",
+                            "loc": {
+                                "start": 33,
+                                "end": 39
+                            }
+                        },
+                        "loc": {
+                            "start": 33,
+                            "end": 39
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 27,
+                        "end": 39
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "onlyForEndpoint",
+                        "loc": {
+                            "start": 42,
+                            "end": 57
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "String",
+                            "loc": {
+                                "start": 59,
+                                "end": 65
+                            }
+                        },
+                        "loc": {
+                            "start": 59,
+                            "end": 65
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 42,
+                        "end": 65
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "posts",
+                        "loc": {
+                            "start": 68,
+                            "end": 73
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "ListType",
+                        "type": {
+                            "kind": "NamedType",
+                            "name": {
+                                "kind": "Name",
+                                "value": "Post",
+                                "loc": {
+                                    "start": 76,
+                                    "end": 80
+                                }
+                            },
+                            "loc": {
+                                "start": 76,
+                                "end": 80
+                            }
+                        },
+                        "loc": {
+                            "start": 75,
+                            "end": 81
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 68,
+                        "end": 81
+                    }
+                }
+            ],
+            "loc": {
+                "start": 0,
+                "end": 83
+            }
+        },
+        {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+                "kind": "Name",
+                "value": "Mutation",
+                "loc": {
+                    "start": 135,
+                    "end": 143
+                }
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "upvotePost",
+                        "loc": {
+                            "start": 148,
+                            "end": 158
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "kind": "InputValueDefinition",
+                            "name": {
+                                "kind": "Name",
+                                "value": "postId",
+                                "loc": {
+                                    "start": 159,
+                                    "end": 165
+                                }
+                            },
+                            "type": {
+                                "kind": "NonNullType",
+                                "type": {
+                                    "kind": "NamedType",
+                                    "name": {
+                                        "kind": "Name",
+                                        "value": "Int",
+                                        "loc": {
+                                            "start": 167,
+                                            "end": 170
+                                        }
+                                    },
+                                    "loc": {
+                                        "start": 167,
+                                        "end": 170
+                                    }
+                                },
+                                "loc": {
+                                    "start": 167,
+                                    "end": 171
+                                }
+                            },
+                            "defaultValue": null,
+                            "directives": [],
+                            "loc": {
+                                "start": 159,
+                                "end": 171
+                            }
+                        }
+                    ],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "Post",
+                            "loc": {
+                                "start": 174,
+                                "end": 178
+                            }
+                        },
+                        "loc": {
+                            "start": 174,
+                            "end": 178
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 148,
+                        "end": 178
+                    }
+                }
+            ],
+            "loc": {
+                "start": 130,
+                "end": 180
+            }
+        },
+        {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+                "kind": "Name",
+                "value": "Post",
+                "loc": {
+                    "start": 187,
+                    "end": 191
+                }
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "id",
+                        "loc": {
+                            "start": 196,
+                            "end": 198
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NonNullType",
+                        "type": {
+                            "kind": "NamedType",
+                            "name": {
+                                "kind": "Name",
+                                "value": "Int",
+                                "loc": {
+                                    "start": 200,
+                                    "end": 203
+                                }
+                            },
+                            "loc": {
+                                "start": 200,
+                                "end": 203
+                            }
+                        },
+                        "loc": {
+                            "start": 200,
+                            "end": 204
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 196,
+                        "end": 204
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "title",
+                        "loc": {
+                            "start": 207,
+                            "end": 212
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "String",
+                            "loc": {
+                                "start": 214,
+                                "end": 220
+                            }
+                        },
+                        "loc": {
+                            "start": 214,
+                            "end": 220
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 207,
+                        "end": 220
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "author",
+                        "loc": {
+                            "start": 223,
+                            "end": 229
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "Author",
+                            "loc": {
+                                "start": 231,
+                                "end": 237
+                            }
+                        },
+                        "loc": {
+                            "start": 231,
+                            "end": 237
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 223,
+                        "end": 237
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "votes",
+                        "loc": {
+                            "start": 240,
+                            "end": 245
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "Int",
+                            "loc": {
+                                "start": 247,
+                                "end": 250
+                            }
+                        },
+                        "loc": {
+                            "start": 247,
+                            "end": 250
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 240,
+                        "end": 250
+                    }
+                }
+            ],
+            "loc": {
+                "start": 182,
+                "end": 252
+            }
+        },
+        {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+                "kind": "Name",
+                "value": "Query",
+                "loc": {
+                    "start": 300,
+                    "end": 305
+                }
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "posts",
+                        "loc": {
+                            "start": 310,
+                            "end": 315
+                        }
+                    },
+                    "arguments": [],
+                    "type": {
+                        "kind": "ListType",
+                        "type": {
+                            "kind": "NamedType",
+                            "name": {
+                                "kind": "Name",
+                                "value": "Post",
+                                "loc": {
+                                    "start": 318,
+                                    "end": 322
+                                }
+                            },
+                            "loc": {
+                                "start": 318,
+                                "end": 322
+                            }
+                        },
+                        "loc": {
+                            "start": 317,
+                            "end": 323
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 310,
+                        "end": 323
+                    }
+                },
+                {
+                    "kind": "FieldDefinition",
+                    "name": {
+                        "kind": "Name",
+                        "value": "author",
+                        "loc": {
+                            "start": 326,
+                            "end": 332
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "kind": "InputValueDefinition",
+                            "name": {
+                                "kind": "Name",
+                                "value": "id",
+                                "loc": {
+                                    "start": 333,
+                                    "end": 335
+                                }
+                            },
+                            "type": {
+                                "kind": "NonNullType",
+                                "type": {
+                                    "kind": "NamedType",
+                                    "name": {
+                                        "kind": "Name",
+                                        "value": "Int",
+                                        "loc": {
+                                            "start": 337,
+                                            "end": 340
+                                        }
+                                    },
+                                    "loc": {
+                                        "start": 337,
+                                        "end": 340
+                                    }
+                                },
+                                "loc": {
+                                    "start": 337,
+                                    "end": 341
+                                }
+                            },
+                            "defaultValue": null,
+                            "directives": [],
+                            "loc": {
+                                "start": 333,
+                                "end": 341
+                            }
+                        },
+                        {
+                            "kind": "InputValueDefinition",
+                            "name": {
+                                "kind": "Name",
+                                "value": "name",
+                                "loc": {
+                                    "start": 343,
+                                    "end": 347
+                                }
+                            },
+                            "type": {
+                                "kind": "NamedType",
+                                "name": {
+                                    "kind": "Name",
+                                    "value": "String",
+                                    "loc": {
+                                        "start": 349,
+                                        "end": 355
+                                    }
+                                },
+                                "loc": {
+                                    "start": 349,
+                                    "end": 355
+                                }
+                            },
+                            "defaultValue": null,
+                            "directives": [],
+                            "loc": {
+                                "start": 343,
+                                "end": 355
+                            }
+                        }
+                    ],
+                    "type": {
+                        "kind": "NamedType",
+                        "name": {
+                            "kind": "Name",
+                            "value": "Author",
+                            "loc": {
+                                "start": 358,
+                                "end": 364
+                            }
+                        },
+                        "loc": {
+                            "start": 358,
+                            "end": 364
+                        }
+                    },
+                    "directives": [],
+                    "loc": {
+                        "start": 326,
+                        "end": 364
+                    }
+                }
+            ],
+            "loc": {
+                "start": 295,
+                "end": 366
+            }
+        }
+    ],
+    "loc": {
+        "start": 0,
+        "end": 367
+    }
+}
