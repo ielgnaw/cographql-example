@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "endpoint": "cgql init -s ./data/user-another-write.graphql -e http://localhost:8003/graphql",
+        "local": "cgql init -s ./data/user-another-write.graphql"
     },
     "edp": {
         "wwwroot": "/",
